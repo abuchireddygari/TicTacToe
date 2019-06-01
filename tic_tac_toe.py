@@ -72,9 +72,7 @@ class TicTacToe:
         
     
     def check_win(self):
-        
         winner  = 0
-        
         for player in range(1,self.num_players+1):
             if self.row_win(player) or self.col_win(player) or self.diag_win(player):
                 winner = player
